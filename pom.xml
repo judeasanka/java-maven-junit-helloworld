@@ -80,6 +80,9 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.5.2</version>
+	<configuration>
+	 <forkCount>0</forkCount>
+	</configuration>
       </plugin>
       <plugin>
         <!-- Integration tests are run by failsafe. -->
