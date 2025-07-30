@@ -31,6 +31,9 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Test Phase
       run: mvn test --file pom.xml
+    - name: "All Test Passed"
+      if: success()
+      run: echo " Tadaaa... Test Pass"
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
